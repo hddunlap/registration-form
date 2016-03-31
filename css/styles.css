@@ -1,0 +1,261 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	color: #152D40;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+
+}
+
+.main-header h1 {
+	font-family: 'VT323', sans-serif;
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+h3 {
+	color: #152D40;
+	font-size: 1.6em;
+	font-weight: 700;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+
+#contact_info h3 {
+	padding-top: 20px;
+}
+
+.main-header {
+	background: url('../img/header-photo.jpg') center center;
+	background-size: cover;
+	text-align: center;
+	background-color: #152D40;
+	color: white;
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	text-shadow: 0px 5px 5px rgba(0,0,0,.7);
+	letter-spacing: 3px;
+}
+
+.secondary-header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 5px solid black;
+	text-align: center;
+}
+
+form {
+	width: 100%;
+}
+
+fieldset {
+	border: 0;
+}
+
+.main-footer {	
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	padding: 40px;
+	margin-bottom: 200px;
+
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact_info {
+	padding-bottom: 40px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+::-webkit-input-placeholder {
+	text-align: right;
+	font-style: italic;
+}
+
+
+
+legend {
+	padding-bottom: 20px;
+}
+
+legend span {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+label {
+	margin: 12px 0;
+}
+
+#contact_info input:not(:last-child) {
+	-webkit-appearance: none;
+	padding: 15px;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	background-color: #eee;
+}
+
+#newsletter {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.checkboxes {
+	padding-bottom: 15px;
+}
+
+#newsletter h3 {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#zipcode {
+	-webkit-appearance: none;
+	width: 50%;
+	padding: 15px;
+	border: none;
+	border-radius: 4px;
+	background-color: #eee;
+}
+
+select {
+	-webkit-appearance: none;
+	border: none;
+	padding: 20px;
+	background-color: #eee;
+	width: 100%;
+	color:  #AEB2B5;
+	background: #f3f3f3 url('../img/arrow.png') no-repeat right center;
+
+}
+
+
+textarea {
+	margin-bottom: 40px;
+	outline: 0px none transparent;
+	width: 95%;
+	border: none;
+	background-color: #eee;
+	border-radius: 5px;
+	min-height: 150px;
+	margin-left: 12px;
+	resize: none;
+}
+
+button {
+	border-radius: 5px;
+	background: none;
+	border: none;
+	width: 95%;
+	color: white;
+	background-color: #00b1dd;
+	padding: 30px;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-left: 12px;
+	transition: background-color 1s ease;
+}
+
+button:hover {
+	background-color: #152D40; 
+}
+
+button:active {
+	box-shadow: inset 0px 0px 20px rgba(0,0,0,.7);
+
+}
+
+#newsletter label {
+	margin-left: 12px;
+}
+
+
+.main-footer span {
+	color: #AEB2B5;
+	font-style: italic;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-right: 12px;
+    vertical-align:middle;
+    background:url('../img/check_radio_sheet.png') 66.666% top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url('../img/check_radio_sheet.png') right top no-repeat;
+}
+
+.secondary-header span {
+	color:  #AEB2B5;
+	font-size: 1.2em;
+}
+
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-right: 12px;
+    vertical-align:middle;
+    background:url('../img/check_radio_sheet.png')  left top no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+    background:url('../img/check_radio_sheet.png') 33.333% top no-repeat;
+}
+
+textarea, input, select {
+	transition: box-shadow 1s ease;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 2pt #152D40;
+    outline: none;
+}
+
+
+
+@media (min-width: 760px) {
+	.container {
+		width: 75%;
+	
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		width: 60%;
+		max-width: 800px;
+	}
+}
+
+
+
