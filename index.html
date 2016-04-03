@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Code Review</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300,400italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+	<script src="https://use.typekit.net/oid5dvb.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 	<header class="main-header">
@@ -21,9 +23,10 @@
 
 			<form action="index.html" method="post">
 
-				<fieldset id="contact_info">
 
-					<h3>Contact Information</h3>
+				<fieldset id="contact_info">
+				<legend>Contact Information</legend>
+
 
 					<label for="name">Full Name</label>
 					<input type="text" id="name" name="user_name" placeholder="Required"  pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"  title="format: firstname lastname" required aria-required="true"/>
@@ -355,8 +358,7 @@
 				</fieldset>
 
 				<fieldset id="newsletter">
-
-					<h3>Newsletter</h3>
+				<legend>Newsletter</legend>
 
 					<label>Select the newsletters you would like to recieve</label><br>
 
@@ -366,7 +368,7 @@
 
 					<div class="checkboxes"><input type="checkbox" id="javascript_news" value="newsletter_javascript" name="user_newsletter"><label for="javascript_news"><span></span>Javascript News</label></div>
 
-					<label>Newsletter format</label><br>
+					<h2>Newsletter format</h2><br>
 
 					<div class="checkboxes"><input type="radio" id="html_format" value="html_newsletter" name="user_format"><label for="html_format"><span></span>HTML</label></div>
 
