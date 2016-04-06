@@ -12,6 +12,7 @@ body {
 
 
 label {
+	display: inline-block;
 	margin-bottom: 12px;
 	margin-top: 12px;
 }
@@ -60,6 +61,7 @@ h3 {
 	padding-bottom: 40px;
 	border-bottom: 5px solid black;
 	text-align: center;
+	width: 100%;
 }
 
 form {
@@ -69,6 +71,7 @@ form {
 }
 
 fieldset {
+
 	border: 0;
 }
 
@@ -87,6 +90,7 @@ fieldset {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 #contact_info {
@@ -119,6 +123,24 @@ legend span {
 }
 
 
+#name-wrapper input,
+#email-wrapper input,
+#phone-wrapper input, 
+#street-wrapper input, 
+#city-wrapper input {
+	-webkit-appearance: none;
+	padding: 15px;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	background-color: #eee;
+}
+
+
+
+.item-wrapper select {
+	padding: 15px;
+}
 
 #contact_info input:not(:last-child) {
 	-webkit-appearance: none;
@@ -142,6 +164,10 @@ legend span {
 #newsletter h3 {
 	padding-top: 10px;
 	padding-bottom: 20px;
+}
+
+#zip-wrapper label {
+	width: 100%;
 }
 
 #zipcode {
@@ -168,7 +194,7 @@ select {
 textarea {
 	margin-bottom: 40px;
 	outline: 0px none transparent;
-	width: 95%;
+	width: 100%;
 	border: none;
 	background-color: #eee;
 	border-radius: 5px;
@@ -180,7 +206,7 @@ button {
 	border-radius: 5px;
 	background: none;
 	border: none;
-	width: 95%;
+	width: 100%;
 	color: white;
 	background-color: #00b1dd;
 	padding: 30px;
@@ -259,12 +285,55 @@ textarea:focus, input:focus, select:focus {
 		width: 75%;
 	
 	}
+
 }
 
 @media (min-width: 1024px) {
 	.container {
 		width: 60%;
 		max-width: 800px;
+	}
+
+	#name-wrapper, 
+	#email-wrapper,
+	#phone-wrapper,
+	#street-wrapper,
+	#city-wrapper,
+	#state-wrapper,
+	#country-wrapper,
+	#zip-wrapper {
+		margin-bottom: 20px;
+	}
+
+	.item-wrapper {
+		padding: 10px 0;
+	}
+
+	select {
+		width: 70%;
+		float: right;
+	}
+
+	#name-wrapper input,
+	#email-wrapper input,
+	#phone-wrapper input,
+	#street-wrapper input,
+	#city-wrapper input,
+	#state-wrapper input {
+		width: 70%;
+		float: right;
+	}
+
+	.item-wrapper label {
+		width: 30%;
+	}
+
+	#zip-wrapper label {
+		width: 30%;
+	}
+	#zip-wrapper input {
+		width: 20%;
+
 	}
 }
 
